@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="font-Tenorsans font-bold z-10 " >
+    <footer className="font-Tenorsans font-bold z-10 text-[#464236]" >
       <span>© QuotesCafe 2022 </span>
     </footer>
   );
