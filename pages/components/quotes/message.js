@@ -28,8 +28,8 @@ function Message(props) {
             className="w-[25em] h-[20em] md:h-[30em] rounded-2xl relative"
           ></img>
 
-          <span className="absolute w-[60%] text-[10px] sm:text-[15px] ">"{message.content}"</span>
-          <span className="absolute bottom-[3em] right-[3em]">-😊</span>
+          <span className="absolute w-[60%] text-[10px] sm:text-[15px] ">&quot;{message.content}&quot;</span>
+          <span className="absolute bottom-[3em] right-[3em]">-</span>
         </section>
         <button
           className="outlines-none"

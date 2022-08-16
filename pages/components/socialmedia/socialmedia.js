@@ -19,7 +19,7 @@ function SocialMedia() {
             <RiInstagramFill className="w-[3em] h-[3em] p-2 text-[#87805E] bg-[#D8CCA3] rounded-full" />
           </button>
           <span className="w-[.3em] min-h-[28em] rounded-sm bg-[#87805E] relative ">
-            <section className="absolute bottom-[20%] w-[15em] flex flex-col justify-end -translate-x-[16em] gap-5 text-[#D8CCA3]">
+            <section className="absolute bottom-[20%] w-[15em] flex flex-col justify-end -translate-x-[16em] gap-5 text-[#464236]">
               <p className="text-end text-[12px]">
                 Generate a random quote for you!
               </p>
