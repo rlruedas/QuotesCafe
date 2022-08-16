@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Guide() {
   return (
-    <div className="relative hidden lg:flex flex-col w-full h-full justify-center font-Tenorsans font-bold text-[#87805E]  items-start gap-2">
+    <div className="relative hidden lg:flex flex-col w-[25%] h-full justify-center font-Tenorsans font-bold text-[#87805E]  items-start gap-2">
       <section className="flex flex-col justify-center items-center w-fit h-full gap-2">
         <Image
           src="/projectlogo.webp"
