@@ -8,7 +8,7 @@ function Quotes() {
 
   const fetchQuotes = async () => {
     const response = await axios.get(
-      "https://api.quotable.io/random?tags=inspirational"
+      "https://api.quotable.io/random?tags=inspirational|motivational|wisdom"
     );
     const data = await response.data;
     setQuote(data);
