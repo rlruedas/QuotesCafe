@@ -23,8 +23,9 @@ function Message(props) {
         </button>
         <section className="flex justify-center items-center relative w-fit h-fit font-Vollkorn">
           <Image
-            src={bgimg[countBG]?.link ?? ""}
+            src={bgimg[countBG]?.link}
             alt="Quote Background"
+            priority="true"
             width="400px"
             height="500px"
             className="w-[25em] h-[20em] md:h-[30em] rounded-2xl relative"
