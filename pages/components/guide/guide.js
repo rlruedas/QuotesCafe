@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Guide() {
   return (
-    <div className="relative hidden lg:flex flex-col w-[25%] h-full justify-center font-Tenorsans font-bold text-[#87805E]  items-start gap-2">
+    <div className="relative hidden lg:flex flex-col flex-1 h-fit justify-center font-Tenorsans font-bold text-[#87805E]  items-start gap-2">
       <section className="flex flex-col justify-center items-center w-fit h-full gap-2">
         <Image
           src="/projectlogo.webp"
@@ -12,9 +12,9 @@ function Guide() {
           width="88"
           height="88"
         />
-        <span className="w-[.3em] min-h-[36em] rounded-sm bg-[#87805E] "></span>
+        <span className="w-[.3em] min-h-[28em] rounded-sm bg-[#87805E] "></span>
       </section>
-      <section className="absolute top-[15em] flex flex-col w-[16em]  text-[12px] gap-5 z-10">
+      <section className="absolute top-[12em] flex flex-col w-[16em]  text-[12px] gap-5 z-10">
         <span className="bg-[#EDDFB3]">
           Are you experiencing different states of emotion?
         </span>
@@ -34,7 +34,7 @@ function Guide() {
         </span>
       </section>
       <Link href="./suggestions">
-        <span className="text-[20px] text-[#EDDFB3] cursor-pointer">
+        <span className="text-[20px] text-[#EDDFB3] cursor-pointer border border-[#EDDFB3] rounded-md px-3">
           Suggestions
         </span>
       </Link>

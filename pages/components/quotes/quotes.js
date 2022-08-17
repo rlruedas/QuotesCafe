@@ -15,7 +15,7 @@ function Quotes() {
   };
 
   return (
-    <div className="flex flex-col w-full lg:w-[50%] h-full justify-center items-center gap-[2em] ">
+    <div className="flex flex-col flex-1 h-fit justify-center items-center gap-[1em] ">
       <span className="font-Tenorsans font-bold text-[#87805E] text-[30px] sm:text-[50px] ">
         Quotes Cafe
       </span>
@@ -29,7 +29,7 @@ function Quotes() {
         <TbArrowRightTail className="w-[2em] h-[2em] text-[#87805E]" />
         <button
           onClick={() => fetchQuotes()}
-          className="font-Tenorsans font-bold text-[#87805E] text-[25px]"
+          className="font-Tenorsans font-bold text-[#87805E] text-[25px] border border-[#87805E] rounded-md px-3 animate-pulse"
         >
           LUMIKHA
         </button>
