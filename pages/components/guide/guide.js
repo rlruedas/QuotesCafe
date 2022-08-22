@@ -34,7 +34,7 @@ function Guide() {
         </span>
       </section>
       <Link href="./suggestions">
-        <span className="text-[20px] text-[#EDDFB3] cursor-pointer border border-[#EDDFB3] rounded-md px-3">
+        <span className="text-[20px] text-[#464236] cursor-pointer border border-[#464236] rounded-md px-3">
           Suggestions
         </span>
       </Link>
