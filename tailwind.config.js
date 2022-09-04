@@ -8,7 +8,8 @@ module.exports = {
     extend: { 
       fontFamily : {
         'Tenorsans' : ['Tenor Sans', 'sans-serif'],
-        'Vollkorn' : ['Vollkorn', 'serif']
+        'Vollkorn' : ['Vollkorn', 'serif'],
+        'Swanky': ['Swanky and Moo Moo', 'cursive']
       }
     },
   },

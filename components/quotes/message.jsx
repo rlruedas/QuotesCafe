@@ -1,12 +1,37 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import bgimages from "../../../data/imgbackground.json";
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
 
 function Message(props) {
   const [countBG, setCountBG] = useState(0);
-  const { bgimg } = bgimages;
   const { message } = props;
+
+  const bgimg = [
+    {
+      link: "/quotebackgrounds/webp/paper-0.webp",
+    },
+    {
+      link: "/quotebackgrounds/webp/paper-1.webp",
+    },
+    {
+      link: "/quotebackgrounds/webp/paper-2.webp",
+    },
+    {
+      link: "/quotebackgrounds/webp/paper-3.webp",
+    },
+    {
+      link: "/quotebackgrounds/webp/paper-4.webp",
+    },
+    {
+      link: "/quotebackgrounds/webp/paper-5.webp",
+    },
+    {
+      link: "/quotebackgrounds/webp/paper-6.webp",
+    },
+    {
+      link: "/quotebackgrounds/webp/paper-7.webp",
+    },
+  ];
 
   return (
     <>
@@ -34,7 +59,9 @@ function Message(props) {
           <span className="absolute w-[60%] text-[10px] sm:text-[15px] ">
             &quot;{message.content}&quot;
           </span>
-          <span className="absolute bottom-[3em] right-[3em] text-[10px] sm:text-[12px]">-fromOuterSpace</span>
+          <span className="absolute bottom-[3em] right-[3em] text-[10px] sm:text-[12px]">
+            -fromOuterSpace
+          </span>
         </section>
         <button
           className="outlines-none"
