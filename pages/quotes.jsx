@@ -17,7 +17,7 @@ function Quotes() {
   const openModal = () => {
     html2canvas(document.querySelector("#message"), {backgroundColor: null}).then((canvas) => {
       document.getElementById("modal").appendChild(canvas);
-      setShareURL(canvas.toDataURL("image/jpeg"))
+      setShareURL(canvas.toDataURL())
     });
 
     document
@@ -40,6 +40,8 @@ function Quotes() {
 
     const createEl = document.createElement('a');
     createEl.href = shareURL;
+
+    console.log(createEl)
 
     // This is the name of our downloaded file
     createEl.download = "QuoteImage";
