@@ -15,9 +15,11 @@ function Quotes() {
   }, []);
 
   const openModal = () => {
-    html2canvas(document.querySelector("#message"), {backgroundColor: null}).then((canvas) => {
+    html2canvas(document.querySelector("#message"), {
+      backgroundColor: null,
+    }).then((canvas) => {
       document.getElementById("modal").appendChild(canvas);
-      setShareURL(canvas.toDataURL())
+      setShareURL(canvas.toDataURL());
     });
 
     document
@@ -36,24 +38,16 @@ function Quotes() {
   };
 
   const handleShareImage = () => {
-    console.log(shareURL);
-
-    const createEl = document.createElement('a');
+    const createEl = document.createElement("a");
     createEl.href = shareURL;
-
-    console.log(createEl)
-
-    // This is the name of our downloaded file
     createEl.download = "QuoteImage";
-
-    // Click the download button, causing a download, and then remove it
     createEl.click();
     createEl.remove();
   };
 
   return (
     <>
-      <div className="relative flex flex-col items-center w-full min-h-screen overflow-hidden font-Swanky">
+      <div className="relative round flex flex-col items-center w-full min-h-screen overflow-hidden font-Swanky">
         <Header setCategory={set} />
         <div className="h-[90vh] flex justify-center">
           <div className=" flex flex-row place-self-center self-center justify-center items-center w-full min-h-fit !overflow-hidden  quote-container">

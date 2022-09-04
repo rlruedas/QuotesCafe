@@ -28,7 +28,7 @@ function Content(props) {
       <Message message={quote} />
       <button
         onClick={modal}
-        className="absolute bottom-[20%] left-[14%] flex justify-center items-center w-[50px] h-[50px] z-50 rounded-full bg-[#e2c193] "
+        className="absolute bottom-[22%] left-[14%] flex justify-center items-center w-[50px] h-[50px] z-50 rounded-full bg-[#e2c193] "
       >
         <IoShareSocialSharp className="text-[30px] text-[#855D49] " />
       </button>
