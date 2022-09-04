@@ -57,7 +57,7 @@ function Message(props) {
             priority="true"
             width="400px"
             height="500px"
-            className="w-[25em] h-[20em] md:h-[30em] rounded-md relative"
+            className="w-[25em] h-[20em] md:h-[30em] relative"
           ></Image>
 
           <span className="absolute w-[60%] text-[10px] sm:text-[15px] ">
