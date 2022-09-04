@@ -17,7 +17,7 @@ function Header(props) {
         <>
           <div className="sticky top-0 flex flex-row w-full h-[10vh] justify-around items-center font-Swanky text-[#855D49] z-50 backdrop-blur-sm">
             <button onClick={() => router.push("/")} className="text-[28px]">
-              "Quotes Cafe" ☕
+            &quot;Quotes Cafe&quot; ☕
             </button>
             <button onClick={() => setActive(!active)} className="z-50">
               <IoMenuOutline
@@ -34,7 +34,7 @@ function Header(props) {
         <>
           <div className="sticky top-0 flex flex-row w-full h-[4em] justify-center items-center space-x-[8em] font-Swanky text-[#855D49] backdrop-blur-sm z-50">
             <button onClick={() => router.push("/")} className="text-[28px]">
-              "Quotes Cafe" ☕
+            &quot;Quotes Cafe&quot; ☕
             </button>
             <DesktopNavBar />
           </div>

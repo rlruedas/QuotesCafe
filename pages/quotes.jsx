@@ -12,7 +12,7 @@ function Quotes() {
     (item) => {
       setCategory(item);
     },
-    [category]
+    []
   );
 
   return (

@@ -14,7 +14,7 @@ function Guide(props) {
     >
       <section className=" flex flex-col w-full text-[16px] z-10">
         <span className="rounded-sm text-[45px]">A simple guide</span>
-        Just press 'Get Quote' to generate your random quote 😊
+        Just press &apos;Get Quote&apos; to generate your random quote 😊
       </section>
 
       <section className="flex flex-col w-full justify-center items-start">

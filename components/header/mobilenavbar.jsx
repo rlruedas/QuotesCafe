@@ -7,8 +7,6 @@ function Mobile(props) {
   const { active, setCategory } = props;
   const router = useRouter();
 
-  console.log(router.pathname);
-
   return (
     <>
       <div

@@ -5,10 +5,10 @@ function Filters(props) {
   const { setCategory } = props;
   const category = ["motivational", "inspirational", "love", "wisdom", "life"];
 
-  const handleCategory = useCallback((item, index) => {
+  const handleCategory = (item, index) => {
     setCategory(item);
     setItemIndex(index);
-  }, []);
+  };
 
   return (
     <>
