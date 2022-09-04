@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
 
@@ -35,7 +35,7 @@ function Message(props) {
 
   return (
     <>
-      <div className="flex justify-center items-center w-full h-full">
+      <div className="relative flex justify-center items-center w-full h-full">
         <button
           className="outlines-none"
           onClick={() =>
@@ -46,14 +46,18 @@ function Message(props) {
         >
           <MdNavigateBefore className="w-[2em] h-[2em] text-[#87805E]" />
         </button>
-        <section className="flex justify-center items-center relative w-fit h-fit font-Vollkorn">
+
+        <section
+          className="flex justify-center items-center relative w-fit h-fit font-Vollkorn bg-transparent bg-opacity-0"
+          id="message"
+        >
           <Image
             src={bgimg[countBG]?.link}
             alt="Quote Background"
             priority="true"
             width="400px"
             height="500px"
-            className="w-[25em] h-[20em] md:h-[30em] rounded-2xl relative"
+            className="w-[25em] h-[20em] md:h-[30em] rounded-md relative"
           ></Image>
 
           <span className="absolute w-[60%] text-[10px] sm:text-[15px] ">
