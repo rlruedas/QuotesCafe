@@ -19,7 +19,7 @@ function About() {
             wisdom to get their focus back. Quotes are also one way of offering
             an inspiration needed by a person for the day or in any time of
             life. We want people to get motivated, inspired, and encourage
-            especially those who are doubting theirselves. Reading quotes
+            especially those who are doubting themselves. Reading quotes
             affirm what we already know about ourselves.{" "}
           </span>
         </section>
