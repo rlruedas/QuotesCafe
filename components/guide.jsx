@@ -19,7 +19,7 @@ function Guide(props) {
 
       <section className="flex flex-col w-full justify-center items-start">
         <h1 className="text-[30px]">Filters</h1>
-        <Filters setCategory={setCategory}/>
+        <Filters setCategory={setCategory} />
       </section>
     </div>
   );
