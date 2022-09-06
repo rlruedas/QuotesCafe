@@ -8,7 +8,7 @@ import html2canvas from "html2canvas";
 
 function Quotes() {
   const [category, setCategory] = useState("motivational");
-  const [shareURL, setShareURL] = useState("");
+  let shareURL = "";
 
   const set = useCallback((item) => {
     setCategory(item);
@@ -19,7 +19,7 @@ function Quotes() {
       backgroundColor: null,
     }).then((canvas) => {
       document.getElementById("modal").appendChild(canvas);
-      setShareURL(canvas.toDataURL());
+      shareURL = canvas.toDataURL();
     });
 
     document

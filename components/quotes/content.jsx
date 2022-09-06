@@ -8,8 +8,7 @@ import { IoShareSocialSharp } from "react-icons/io5";
 function Content(props) {
   const [quote, setQuote] = useState([]);
   const { width } = useWindowDimension();
-  const { modal, filter} = props
-  
+  const { modal, filter } = props;
 
   const fetchQuotes = async () => {
     const response = await axios.get(
