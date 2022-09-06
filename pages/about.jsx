@@ -15,10 +15,10 @@ function About() {
         </section>
         <section className="absolute flex flex-col justify-center items-center bottom-0 right-0 lg:right-[5em] w-[80%] h-[70%] lg:w-[50%] lg:h-[70%] bg-[#855D49]">
           <span className="w-[80%] lg:text-[1.5em] text-[#EDDFB3]">
-            We created this website for people who wants to receive a burst of
+            This website was created for people who wants to receive a burst of
             wisdom to get their focus back. Quotes are also one way of offering
             an inspiration needed by a person for the day or in any time of
-            life. We want people to get motivated, inspired, and encourage
+            life. People want to get motivated, inspired, and encourage
             especially those who are doubting themselves. Reading quotes
             affirm what we already know about ourselves.{" "}
           </span>
