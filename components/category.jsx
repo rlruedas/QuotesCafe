@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Filters(props) {
+function Category(props) {
   const [itemIndex, setItemIndex] = useState(0);
   const { setCategory } = props;
   const category = ["motivational", "inspirational", "love", "wisdom", "life","happiness", "change", "competition", "character", "famous-quotes", "friendship", "future" ];
@@ -29,4 +29,4 @@ function Filters(props) {
   );
 }
 
-export default Filters;
+export default Category;

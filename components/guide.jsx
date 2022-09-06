@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { useWindowDimension } from "../hooks/useWindowDimension";
-import Filters from "./filter";
+import Category from "./category";
 
 function Guide(props) {
   const { setCategory } = props;
@@ -18,8 +18,8 @@ function Guide(props) {
       </section>
 
       <section className="flex flex-col w-full justify-center items-start">
-        <h1 className="text-[30px]">Filters</h1>
-        <Filters setCategory={setCategory} />
+        <h1 className="text-[30px]">Categories</h1>
+        <Category setCategory={setCategory} />
       </section>
     </div>
   );
