@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Image from "next/image";
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
+import { IoShareSocialSharp } from "react-icons/io5";
 
 function Message(props) {
   const [countBG, setCountBG] = useState(0);
-  const { message } = props;
+  const { message, modal } = props;
 
   const bgimg = [
     {
@@ -47,26 +47,32 @@ function Message(props) {
           <MdNavigateBefore className="w-[2em] h-[2em] text-[#87805E]" />
         </button>
 
-        <section
-          className="flex justify-center items-center relative w-fit h-fit font-Vollkorn bg-transparent bg-opacity-0"
-          id="message"
-        >
-          <Image
-            src={bgimg[countBG]?.link}
-            alt="Quote Background"
-            priority="true"
-            width="400px"
-            height="500px"
-            className="w-[25em] h-[20em] md:h-[30em] relative"
-          ></Image>
+        <section className="relative flex flex-col w-fit h-fit justify-center items-center">
+          <section
+            className="flex justify-center items-center relative w-fit h-fit font-Vollkorn bg-transparent bg-opacity-0"
+            id="message"
+          >
+            <img
+              src={bgimg[countBG]?.link}
+              alt="Quote Background"
+              className="w-[100%] h-[70vh] relative"
+            ></img>
 
-          <span className="absolute w-[60%] text-[10px] sm:text-[15px] ">
-            &quot;{message.content}&quot;
-          </span>
-          <span className="absolute bottom-[3em] right-[3em] text-[10px] sm:text-[12px]">
-            -fromOuterSpace
-          </span>
+            <span className="absolute w-[60%] text-[10px] sm:text-[15px] ">
+              &quot;{message.content}&quot;
+            </span>
+            <span className="absolute bottom-[3em] right-[3em] text-[15px] sm:text-[18px]">
+              -🐱‍🚀
+            </span>
+          </section>
+          <button
+            onClick={modal}
+            className="absolute bottom-2 left-2  flex justify-center items-center w-[50px] h-[50px] z-30 rounded-full bg-[#e2c193] "
+          >
+            <IoShareSocialSharp className="text-[30px] text-[#855D49] " />
+          </button>
         </section>
+
         <button
           className="outlines-none"
           onClick={() =>

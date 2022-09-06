@@ -13,9 +13,9 @@ function Header(props) {
 
   return (
     <>
-      {width <= 768 ? (
+      {width <= 769 ? (
         <>
-          <div className="sticky top-0 flex flex-row w-full h-[10vh] justify-around items-center font-Swanky text-[#855D49] z-50 backdrop-blur-sm">
+          <div className="sticky top-0 flex flex-row w-full h-[10vh] justify-around overflow-hidden items-center font-Swanky text-[#855D49] z-50 backdrop-blur-sm">
             <button
               onClick={() => router.push("/")}
               className="text-[28px] whitespace-nowrap"
@@ -24,14 +24,18 @@ function Header(props) {
             </button>
             <button onClick={() => setActive(!active)} className="z-50">
               <IoMenuOutline
-                className={`text-[28px] ${active ? `hidden` : `block`} `}
+                className={`text-[28px] ${active ? `hidden` : `static`} `}
               />
               <IoCloseOutline
-                className={`text-[28px] ${active ? `block` : `hidden`}`}
+                className={`text-[28px] ${active ? `static` : `hidden`}`}
               />
             </button>
           </div>
-          <MobileNavBar active={active} setCategory={setCategory} />
+          <div
+            className={`absolute top-0 pt-[10vh] left-0 w-full h-[100vh]  flex flex-col overflow-hidden ${active? "overflow-y-scroll" : "overflow-hidden"}`}
+          >
+            <MobileNavBar active={active} setCategory={setCategory} />
+          </div>
         </>
       ) : (
         <>

@@ -12,7 +12,7 @@ function Category(props) {
 
   return (
     <>
-      <section className="w-[50%] h-fit flex flex-row flex-wrap items-center lg:items-start  gap-4">
+      <section className="w-[60%] h-fit flex flex-row flex-wrap items-center lg:items-start  gap-4">
         {category.map((item, index) => (
           <button
             onClick={() => handleCategory(item, index)}

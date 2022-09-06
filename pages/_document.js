@@ -6,7 +6,6 @@ function document() {
   return (
     <Html>
       <Head>
-        <title>Quotes Cafe</title>
         <meta name="description" content="Created with Love" />
         <link rel="icon" href="" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
