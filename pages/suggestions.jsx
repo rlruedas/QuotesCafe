@@ -15,7 +15,7 @@ function Suggestions() {
           <button onClick={() => history.back()}>return</button>
         </section>
         <section className="flex flex-col justify-center items-center w-screen h-full z-40  gap-[2em]">
-          <span className="text-[30px] text-[#EDDFB3]">Do you have any suggestions?</span>
+          <span className="text-[20px] sm:text-[30px] text-[#EDDFB3]">Do you have any suggestions?</span>
           <div className="flex flex-col justify-center items-start w-[80%] sm:w-[40%]  h-[50%] gap-5">
             <textarea
               className="text-[.8em] w-full min-h-[20em] max-h-[20em] outline-none p-5 bg-white  placeholder-black  text-justify rounded-lg "

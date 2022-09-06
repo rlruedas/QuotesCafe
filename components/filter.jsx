@@ -1,9 +1,9 @@
-import React, { useCallback, useState } from "react";
+import React, { useState } from "react";
 
 function Filters(props) {
   const [itemIndex, setItemIndex] = useState(0);
   const { setCategory } = props;
-  const category = ["motivational", "inspirational", "love", "wisdom", "life"];
+  const category = ["motivational", "inspirational", "love", "wisdom", "life","happiness", "change", "competition", "character", "famous-quotes", "friendship", "future" ];
 
   const handleCategory = (item, index) => {
     setCategory(item);
@@ -12,7 +12,7 @@ function Filters(props) {
 
   return (
     <>
-      <section className="w-full h-fit flex flex-col items-start space-y-2">
+      <section className="w-[50%] h-fit flex flex-row flex-wrap items-center lg:items-start  gap-4">
         {category.map((item, index) => (
           <button
             onClick={() => handleCategory(item, index)}

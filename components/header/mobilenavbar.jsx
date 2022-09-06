@@ -10,7 +10,7 @@ function Mobile(props) {
   return (
     <>
       <div
-        className={`absolute top-0 pb-2 flex flex-col justify-center items-center !overflow-y-scroll w-full h-full  space-y-[.5em] font-Swanky text-[#34180B] bg-[#E5D0B3] z-40 duration-200 ${
+        className={`absolute top-0 pt-[3em] flex flex-col justify-center items-center !overflow-y-scroll w-full min-h-full  gap-5 font-Swanky text-[#34180B] bg-[#E5D0B3] z-40 duration-200 ${
           active ? `translate-x-0` : `translate-x-full hidden`
         }`}
       >
