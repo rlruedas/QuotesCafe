@@ -22,7 +22,3 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page.
 
-
-# LICENSE
-This project is licensed with GNU GPL-3.0 license
-
