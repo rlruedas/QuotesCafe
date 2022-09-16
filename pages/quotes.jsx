@@ -5,6 +5,8 @@ import Guide from "../components/guide";
 import Content from "../components/quotes/content";
 import SocialMedia from "../components/socialmedia";
 import html2canvas from "html2canvas";
+import { useWindowDimension } from "../hooks/useWindowDimension";
+import Menu from "../components/menu";
 
 function Quotes() {
   const [category, setCategory] = useState("motivational");
@@ -47,8 +49,10 @@ function Quotes() {
 
   return (
     <>
-      <div className="relative round flex flex-col items-center w-full min-h-screen font-Swanky">
-        <Header setCategory={set} />
+      <div className="relative round flex flex-col items-center w-full min-h-screen font-Swanky !overflow-hidden">
+        <Header  />
+        <Menu setCategory={set} />
+
         <div className="h-[90vh] flex justify-center">
           <div className=" flex flex-row place-self-center self-center justify-center items-center w-full min-h-fit !overflow-hidden  quote-container">
             <Guide setCategory={set} />

@@ -1,18 +1,17 @@
 import React from "react";
 import { useRouter } from "next/router";
 import { HiStar } from "react-icons/hi";
-import Filters from "../category";
+import Filters from "./category";
 
-function Mobile(props) {
-  const { active, setCategory } = props;
+function Menu(props) {
+  const { setCategory } = props;
   const router = useRouter();
 
   return (
     <>
       <div
-        className={`flex flex-col justify-center items-center w-full h-fit gap-5 font-Swanky text-[#34180B] bg-[#E5D0B3]  duration-200 ${
-          active ? `translate-x-0 z-40` : `translate-x-full z-0`
-        }`}
+        className={`absolute top-0 left-0 flex flex-col justify-center items-center w-full h-screen gap-5 font-Swanky text-[#34180B] bg-[#E5D0B3] translate-x-full duration-200 z-0 `}
+        id="mobile-menu"
       >
         <button onClick={() => router.push("/quotes")} className="text-[24px] ">
           get quotes
@@ -48,4 +47,4 @@ function Mobile(props) {
   );
 }
 
-export default Mobile;
+export default Menu;

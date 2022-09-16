@@ -8,7 +8,7 @@ function Guide(props) {
 
   return (
     <>
-      {width > 768 && (
+      {width >= 1024 && (
         <div
           className={`relative w-[30vw] h-full flex flex-col font-Swanky text-[#855D49] space-y-[3em] `}
         >

@@ -22,7 +22,7 @@ export const useWindowDimension = () => {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [windowDimension]);
 
   return windowDimension;
 };

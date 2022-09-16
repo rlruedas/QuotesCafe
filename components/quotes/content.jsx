@@ -20,7 +20,7 @@ function Content(props) {
   return (
     <div
       className={`static flex flex-col justify-center items-center min-h-fit !overflow-hidden space-y-6 z-0 ${
-        width <= 768 ? `w-full` : `w-[30vw]`
+        width <= 1024 ? `w-full` : `w-[30vw]`
       }`}
     >
       <Message message={quote} modal={modal} />
